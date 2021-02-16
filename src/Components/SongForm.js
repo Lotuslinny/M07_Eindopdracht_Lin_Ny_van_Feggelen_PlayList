@@ -1,9 +1,9 @@
 import React from "react";
-import Input from "Input";
+import SongFormItems from "./SongFormItems";
 
-const SongForm = () => {
+const SongForm = (props) => {
   <div className="song-form">
-    <Input />
+    <SongFormItems addSong={props.addSong} />
     <button>Add Song</button>
   </div>
 }
