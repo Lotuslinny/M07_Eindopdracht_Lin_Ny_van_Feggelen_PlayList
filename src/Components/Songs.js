@@ -1,5 +1,5 @@
 import React from "react";
-import SongRowItems from "./Components/SongRowItems";
+import SongRowItems from "./SongRowItems";
 
 const Songs = (props) => {
   <div className="songs">

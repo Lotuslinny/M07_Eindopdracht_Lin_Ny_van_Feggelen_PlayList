@@ -1,5 +1,5 @@
 import React from "react";
-import SongListItems from "/Songs";
+import Songs from "./Songs";
 
 const SongList = (props) => {
   <div className="song-list">

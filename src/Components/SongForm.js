@@ -3,8 +3,12 @@ import SongFormItems from "./SongFormItems";
 
 const SongForm = (props) => {
   <div className="song-form">
-    <SongFormItems addSong={props.addSong} />
-    <button>Add Song</button>
+    <SongFormItems className="song-form__items"
+      items={props.items}
+      addSong={props.addSong} />
+    <button className="song-form__button"
+      onClick={props.handleClickForm}
+    >Add Song</button>
   </div>
 }
 
