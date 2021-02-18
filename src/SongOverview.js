@@ -6,12 +6,16 @@ console.log("************")
 class SongOverview extends React.Component {
   constructor(props) {
     super(props)
-    this.state = {
-      songFormInput: [{
-        type: "songFormInput", id: 1, title: "Song", value: " "
-      }]
-    }
+    this.state =
     {
+      songFormInput: [
+        { type: "songFormInput", id: 1, title: "Song", value: " " },
+        { type: "songFormInput", id: 2, title: "Artist", value: " " },
+        { type: "songFormInput", id: 3, title: "Genre", value: " " },
+        { type: "songFormInput", id: 4, title: "Rating", value: " " }
+      ],
+
+
       // songs: [{ type: "songs", id: 1, title: "hello", artist: "Lionel", genre: "love", rating: "5" }]
     }
     //this.addSong = this.addSong.bind(this);
