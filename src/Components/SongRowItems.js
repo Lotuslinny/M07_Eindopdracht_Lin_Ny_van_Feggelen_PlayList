@@ -2,7 +2,7 @@ import React from "react";
 
 const SongRowItems = (props) => {
   <div className="song-row-items">
-    <table style="width:100%">
+    <table >
       <tr className="song-row-items__header">
         <th className="song-row-items__item" songs={props.songs} >Song</th>
         <th className="song-row-items__item" songs={props.songs} >Artist</th>
