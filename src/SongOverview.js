@@ -1,6 +1,6 @@
 import React from "react";
 import SongForm from "./Components/SongForm";
-//import SongList from "./Components/SongList";
+import SongList from "./Components/SongList";
 console.log("************")
 
 class SongOverview extends React.Component {
@@ -14,9 +14,7 @@ class SongOverview extends React.Component {
         { type: "songFormInput", id: 3, title: "Genre", value: " " },
         { type: "songFormInput", id: 4, title: "Rating", value: " " }
       ],
-
-
-      // songs: [{ type: "songs", id: 1, title: "hello", artist: "Lionel", genre: "love", rating: "5" }]
+      songs: [{ type: "songs", id: 1, title: "Title", artist: "Artist", genre: "Genre", rating: "Rating" }]
     }
     //this.addSong = this.addSong.bind(this);
     //this.handleClickForm = this.handleClickForm.bind(this);
@@ -34,9 +32,9 @@ class SongOverview extends React.Component {
   render() {
     return (
       < div >
-        <SongForm items={this.songFormInput} //addSong={this.addSong}
+        <SongForm items={this.state.songFormInput} //addSong={this.addSong}
           /* handleClickForm={this.handleClickForm} */ />
-        {/* <SongList songs={this.state.songs} />   */}
+        <SongList item={this.state.songs} />
       </div >
 
     )

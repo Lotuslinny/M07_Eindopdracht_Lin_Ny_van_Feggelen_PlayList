@@ -4,10 +4,10 @@ const SongRowItems = (props) => {
   <div className="song-row-items">
     <table style="width:100%">
       <tr className="song-row-items__header">
-        <th className="song-row-items__item">Song</th>
-        <th className="song-row-items__item">Artist</th>
-        <th className="song-row-items__item">Genre</th>
-        <th className="song-row-items__item">Rating</th>
+        <th className="song-row-items__item" songs={props.songs} >Song</th>
+        <th className="song-row-items__item" songs={props.songs} >Artist</th>
+        <th className="song-row-items__item" songs={props.songs} >Genre</th>
+        <th className="song-row-items__item" songs={props.songs} >Rating</th>
       </tr>
     </table>
   </div>
