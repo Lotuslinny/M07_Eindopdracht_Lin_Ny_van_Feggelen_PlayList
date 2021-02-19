@@ -8,7 +8,6 @@ const SongFormInput = (props) => {
         key={props.id}
         type={props.type}
         title={props.title}
-        value={props.value}
       ></input>
       <label>Artist</label>
       <input className="song-form-input__artist"

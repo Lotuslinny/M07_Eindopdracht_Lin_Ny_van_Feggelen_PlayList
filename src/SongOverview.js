@@ -34,7 +34,7 @@ class SongOverview extends React.Component {
       < div >
         <SongForm items={this.state.songFormInput} //addSong={this.addSong}
           /* handleClickForm={this.handleClickForm} */ />
-        <SongList item={this.state.songs} />
+        <SongList items={this.state.songs} />
       </div >
 
     )

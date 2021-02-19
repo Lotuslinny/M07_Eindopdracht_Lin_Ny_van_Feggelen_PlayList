@@ -4,7 +4,12 @@ import Songs from "./Songs";
 const SongList = (props) => {
   return (
     <div className="song-list">
-      <Songs items={props.songs} />
+      <Songs key={props.id}
+        type={props.type}
+        title={props.title}
+        artist={props.artist}
+        genre={props.genre}
+        rating={props.rating} />
       {/* <button className="delete-button"></button> */}
     </div>
   )
